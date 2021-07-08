@@ -15,7 +15,7 @@
 }
 /* Logo nav-left */
 
-/* Navigation left */
+/* Navigation left>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .playlist{
     width: 100%;
     height: auto;
@@ -51,12 +51,6 @@
     display: block;
     margin: 0 10%;
 }
-.divide-full::after{
-    content: "";
-    border-bottom:1px solid #3c2c43; 
-    width: 100%;
-    display: block;
-}
 .playlist > h5{
     color:white;
     padding-left: 28px;
@@ -69,11 +63,133 @@
 .create-list span{
    padding-left: 16px;
 }
-/* Navigation left */
+.left .playlist.left-height{
+    padding-bottom: 50%;
+}
+/* Navigation left >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-/* Player */
+
+/* Player>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.fixed-bottom{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* create playlist */
+.fixed-bottom .create-list{
+    color: white;
+    background-color:#2a213a;
+    border-top: 1px solid #3c2c43;
+    width: 200px;
+}
+/* create playlist */
 .player-controls-container{
     background-color: #15051c;
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    padding: 8px 25px;
 }
+/* left -----------------------------------*/
+.player-controls-left{
+    flex: 20%;
+}
+.player-controls-left .media{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.player-controls-left .media .img{
+    width: 70px;
+    height: 70px;
+    background-image: url(/src/images/index/ABBA_-_TopPop_1974_5.png);
+    background-position: center;
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+}
+.player-controls-left .content{
+    color:white;
+    padding-left: 14px;
+    flex-grow: 1;
+}
+.player-controls-left .singer{
+    margin-top: 8px;
+    font-size: 12px;
+}
+.player-controls-left .love span{
+    margin-right: 10px;
+}
+/* left------------------------------------------ */
+/* middle---------------------------------------- */
+.player-controls{
+    flex:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player-controls .player{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player .audio_player{
+    width: 50%;
+}
+/* Button player */
+
+.fas-revert{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.player_button{
+    margin-bottom: 5px;
+    color:white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#play_pause{
+    cursor: pointer;
+}
+.player_button .small{
+    font-size: 20px;
+    padding:0 40px;
+    display: block;
+    cursor: pointer;
+}
+/* Button player */
+/* progress bar */
+#progress_bar {
+    width: 100%;
+    background-color: #5b5260;
+    height: 2px;
+}
+#progress{
+ 
+    background-color: #ffff;
+    height: 2px;
+}
+/* progress bar */
+/* time number */
+.player-controls .count_time, #time_duration{
+    color: #8a838d;
+    font-size: 14px;
+    padding: 0 16px;
+}
+/* time number */
+/* middle------------------------------------------ */
+/* Player>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* right------------------------------------------- */
+.player-controls-right{
+    flex: 20%;
+}
+/* right------------------------------------------- */

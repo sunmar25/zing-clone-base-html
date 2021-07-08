@@ -14,16 +14,18 @@ body{
 
 .row{
     display: flex;
+    height: 100%;
 }
 .row .left{
     margin: 0;
-    flex: 20%;
+    flex: 15%;
     background-color: #2a213a;
+    height: 100%;
 }
 .row .middle{
     flex-grow: 1;
-    padding-left: 20px;
+    flex: 68%;
 }
 .row .right{
-    flex: 25%;
+    flex: 17%;
 }
