@@ -1,4 +1,6 @@
-
+.white{
+    color: #fff;
+}
 /* Logo nav-left */
 .logo-container{
     width: 100%;
@@ -13,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-/* Logo nav-left */
+/* Logo nav-left end */
 
 /* Navigation left>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .playlist{
@@ -62,16 +64,17 @@
 .create-list span{
    padding-left: 16px;
 }
-/* Navigation left >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Navigation left end >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
-/* Player fixed >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Player fixed bottom >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .fixed-bottom{
     position: fixed;
     width: 100%;
     bottom: 0;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid #2d2033;
 }
 .player-controls-container{
     background-color: #15051c;
@@ -158,15 +161,14 @@
 }
 /* Button player end */
 /* progress bar */
-#progress_bar {
+.player .progress_background_play {
     width: 100%;
     background-color: #5b5260;
     height: 2px;
 }
-#progress{
- 
+#progress_time_play{
     background-color: #ffff;
-    height: 2px;
+    height: 1px;
 }
 /* progress bar end */
 /* time number */
@@ -177,10 +179,37 @@
 }
 /* time number end*/
 /* middle player end------------------------------------------ */
-/* Player>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Player fixed bottom end >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* right player------------------------------------------- */
 .player-controls-right{
     flex: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.volume{
+    width: 30%;
+    padding-left: 2%;
+}
+.volume .progress_volume_bar{
+    height: 2px;
+    background-color:#5a5561;
+    width: 100%;
+}
+#progress_volume{
+    height: 1px;
+    background-color:#fff;
+}
+#volume{
+    cursor: pointer;
+}
+.player-controls-right .full-screen{
+    padding:0 5% 0 5%  ;
+}
+.player-controls-right .fa-microphone{
+    /* margin: 0 1%; */
+    padding: 0  20px;
 }
 /* right player end------------------------------------------- */

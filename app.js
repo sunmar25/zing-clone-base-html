@@ -1,15 +1,17 @@
 const player = document.getElementById('music');
-const progress = document.getElementById('progress');
+const progressTimePlay = document.getElementById('progress_time_play');
 const minute = document.getElementById('minute');
 const second = document.getElementById('second');
 const duration = document.getElementById('time_duration');
 const playPause = document.getElementById('play_pause');
+const volume = document.getElementById('volume');
+const progressVolume = document.getElementById('progress_volume');
 var intervalId = null;
 
 // Update the progress bar
 function updateProgressBar() {
     let percentage = Math.floor((100 / player.duration) * player.currentTime);
-    progress.style.width = percentage + "%";
+    progressTimePlay.style.width = percentage + "%";
 }
 // Update count time
 function updateCountTime() {
@@ -50,6 +52,31 @@ function playOrPause(){
     }
 
 }
+//Volume Up, Down
+function Volume(){
+    if(player.volume == 0){
+        console.log("0.5");
+        player.volume = 0.5;
+        progressVolume.style.width = "50%";
+        volume.classList.remove("fas", "fa-volume-mute")
+        volume.classList.add("fas", "fa-volume-down");
+    }else{
+        if(player.volume == 0.5){
+            console.log("1");
+            player.volume = 1;
+            progressVolume.style.width = "100%";
+            volume.classList.remove("fas", "fa-volume-down");
+            volume.classList.add("fas", "fa-volume-up");
+        }else{
+            console.log("mute");
+            player.volume = 0;
+            progressVolume.style.width = "0%";
+            volume.classList.remove("fas", "fa-volume-up");
+            volume.classList.add("fas", "fa-volume-mute");
+        }
+    }
+}
+volume.addEventListener('click',Volume);
 
 //Loop update
 function Loop(){

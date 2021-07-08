@@ -18,34 +18,34 @@
                 </div>
                 <div class="playlist divide">
                     <ul>
-                        <li><i class="fas fa-headphones-alt" style="color: white;"></i><a href="#">Cá Nhân</a></li>
-                        <li class="active"><i class="fas fa-record-vinyl" style="color:white;"></i><a href="#">Khám Phá</a></li>
-                        <li><i class="fas fa-sliders-h" style="color: white;"></i><a href="#">#zingchart</a></li>
-                        <li><i class="fas fa-broadcast-tower" style="color:white;"></i><a href="#">Radio</a></li>
-                        <li><i class="far fa-newspaper" style="color: white;"></i><a href="#">Theo Dõi</a></li>
+                        <li><i class="fas fa-headphones-alt white"></i><a href="#">Cá Nhân</a></li>
+                        <li class="active"><i class="fas fa-record-vinyl white"></i><a href="#">Khám Phá</a></li>
+                        <li><i class="fas fa-sliders-h white" ></i><a href="#">#zingchart</a></li>
+                        <li><i class="fas fa-broadcast-tower white"></i><a href="#">Radio</a></li>
+                        <li><i class="far fa-newspaper white"></i><a href="#">Theo Dõi</a></li>
                     </ul>
                     
                 </div>
                 <div class="playlist">
                     <ul>
-                        <li><i class="fas fa-music" style="color: white;"></i><a href="#">Nhạc Mới</a></li>
-                        <li><i class="fas fa-icons" style="color: white;"></i><a href="#">Thể Loại</a></li>
-                        <li><i class="far fa-star" style="color: white;"></i><a href="#">Top 100</a></li>
-                        <li><i class="fab fa-youtube" style="color: white;"></i><a href="#">MV</a></li>
+                        <li><i class="fas fa-music white"></i><a href="#">Nhạc Mới</a></li>
+                        <li><i class="fas fa-icons white"></i><a href="#">Thể Loại</a></li>
+                        <li><i class="far fa-star white"></i><a href="#">Top 100</a></li>
+                        <li><i class="fab fa-youtube white"></i><a href="#">MV</a></li>
                     </ul>
                     
                 </div>
                 <div class="playlist">
                     <h5>THƯ VIỆN</h5>
                     <ul>
-                        <li><i class="fas fa-guitar" style="color: white;"></i><a href="#">Bài hát</a></li>
-                        <li><i class="far fa-list-alt" style="color:white"></i><a href="#">Playlist</a></li>
-                        <li><i class="fas fa-headset" style="color: white;"></i><a href="#">Gần đây</a></li>
+                        <li><i class="fas fa-guitar white"></i><a href="#">Bài hát</a></li>
+                        <li><i class="far fa-list-alt white"></i><a href="#">Playlist</a></li>
+                        <li><i class="fas fa-headset white"></i><a href="#">Gần đây</a></li>
                     </ul>
                     
                 </div>
                 <div class="create-list">
-                    <i class="fas fa-plus" style="color: white;"></i><span>Tạo playlist mới</span>
+                    <i class="fas fa-plus white"></i><span>Tạo playlist mới</span>
                 </div>
                
             </div>
@@ -53,7 +53,7 @@
                 <iframe src="./main.html" frameborder="0" width="100%" height="100%"></iframe>
             </div>
             <div class="right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore, modi minus nobis qui incidunt, voluptatem perspiciatis possimus mollitia nihil expedita veritatis consequuntur, delectus molestiae pariatur ipsum debitis a. Quibusdam?
+                <iframe src="./right.html" frameborder="0" width="100%" height="100%"></iframe>
             </div>
         </div>
         <div class="fixed-bottom">
@@ -66,8 +66,8 @@
                             <div class="singer">Abba</div>
                         </div>
                         <div class="love">
-                            <span><i class="far fa-heart" style="color: white;"></i></span>
-                            <span><i class="fas fa-ellipsis-h" style="color: white;"></i></span>
+                            <span><i class="far fa-heart white"></i></span>
+                            <span><i class="fas fa-ellipsis-h white"></i></span>
                         </div>
                     </div>
                 </div>
@@ -87,8 +87,8 @@
                             Your browser does not support the audio format.
                         </audio>
                         <div class="audio_player">
-                            <div id="progress_bar">
-                                <div id="progress">
+                            <div class="progress_background_play">
+                                <div id="progress_time_play">
                                 </div>
                             </div>
                         </div> 
@@ -97,7 +97,17 @@
                 </div>
     
                 <div class="player-controls-right">
-                   noi dung been
+                   <div>
+                    <i class="fas fa-film white" ></i>
+                    <i class="fas fa-microphone white"></i>
+                    <i id="volume" class="fas fa-volume-up white"></i>
+                   </div>
+                   <div class="volume">
+                       <div class="progress_volume_bar">
+                           <div id="progress_volume"></div>
+                       </div>
+                   </div>
+                   <i class="full-screen fas fa-expand-alt white"></i>
                 </div>
             </div>
         </div>
