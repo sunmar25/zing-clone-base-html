@@ -2,7 +2,7 @@
 /* Logo nav-left */
 .logo-container{
     width: 100%;
-    padding: 18px 0 0 28px;
+    padding: 18px 0 0 10px;
   
 }
 .logo-container .zing-logo{
@@ -18,8 +18,7 @@
 /* Navigation left>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .playlist{
     width: 100%;
-    height: auto;
-    /* padding-top: 0; */
+    padding: 14px 0;
 }
 .playlist ul{
     list-style: none;
@@ -58,18 +57,15 @@
 .create-list{
     padding: 18px 28px;
     color:white;
-    display: block;
+    border-top: 1px solid #3c2c43;
 }
 .create-list span{
    padding-left: 16px;
 }
-.left .playlist.left-height{
-    padding-bottom: 50%;
-}
 /* Navigation left >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
-/* Player>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Player fixed >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .fixed-bottom{
     position: fixed;
     width: 100%;
@@ -77,22 +73,17 @@
     display: flex;
     flex-direction: column;
 }
-/* create playlist */
-.fixed-bottom .create-list{
-    color: white;
-    background-color:#2a213a;
-    border-top: 1px solid #3c2c43;
-    width: 200px;
-}
-/* create playlist */
 .player-controls-container{
     background-color: #15051c;
     display: flex;
-    padding: 8px 25px;
+    width: 100%;
+
 }
-/* left -----------------------------------*/
+/* left player -----------------------------------*/
 .player-controls-left{
     flex: 20%;
+    display: block;
+    padding: .5% 2%;
 }
 .player-controls-left .media{
     display: flex;
@@ -120,8 +111,8 @@
 .player-controls-left .love span{
     margin-right: 10px;
 }
-/* left------------------------------------------ */
-/* middle---------------------------------------- */
+/* left player end------------------------------------------ */
+/* middle player---------------------------------------- */
 .player-controls{
     flex:60%;
     display: flex;
@@ -165,7 +156,7 @@
     display: block;
     cursor: pointer;
 }
-/* Button player */
+/* Button player end */
 /* progress bar */
 #progress_bar {
     width: 100%;
@@ -177,19 +168,19 @@
     background-color: #ffff;
     height: 2px;
 }
-/* progress bar */
+/* progress bar end */
 /* time number */
 .player-controls .count_time, #time_duration{
     color: #8a838d;
     font-size: 14px;
     padding: 0 16px;
 }
-/* time number */
-/* middle------------------------------------------ */
+/* time number end*/
+/* middle player end------------------------------------------ */
 /* Player>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/* right------------------------------------------- */
+/* right player------------------------------------------- */
 .player-controls-right{
     flex: 20%;
 }
-/* right------------------------------------------- */
+/* right player end------------------------------------------- */
