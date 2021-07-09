@@ -6,6 +6,7 @@ const duration = document.getElementById('time_duration');
 const playPause = document.getElementById('play_pause');
 const volume = document.getElementById('volume');
 const progressVolume = document.getElementById('progress_volume');
+
 var intervalId = null;
 
 // Update the progress bar

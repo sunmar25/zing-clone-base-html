@@ -32,4 +32,6 @@ body{
 }
 .row .right{
     flex: 17%;
+    height: 100px;
+    overflow: auto;
 }
