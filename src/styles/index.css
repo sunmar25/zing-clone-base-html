@@ -29,9 +29,11 @@ body{
 .row .middle{
     flex-grow: 1;
     flex: 68%;
+    background-color: #170f23;
 }
 .row .right{
     flex: 17%;
-    height: 100px;
     overflow: auto;
+    background-color: #170f23;
+    border-left: 1px solid red;
 }
