@@ -10,7 +10,8 @@ body{
 }
 /* Variables */
 :root{
-    --zing-logo: url(/src/images/index/logo/logo-dark.svg)
+    --zing-logo: url(/src/images/index/logo/logo-dark.svg);
+    /* --switch-content:"Danh sách phát"; */
 }
 
 .row{
@@ -19,8 +20,8 @@ body{
 }
 .row .left{
     margin: 0;
-    flex: 15%;
-    background-color: #2a213a;
+    flex: 14%;
+    /* background-color: #2a213a; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -32,8 +33,19 @@ body{
     background-color: #170f23;
 }
 .row .right{
-    flex: 17%;
+    flex: 18%;
     overflow: auto;
     background-color: #170f23;
-    border-left: 1px solid red;
+    border-left: 1px solid #2d2033;
+    padding: 20px 10px 0 10px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6d6775; 
+    border-radius: 5px;
 }
