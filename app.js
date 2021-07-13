@@ -26,27 +26,27 @@ function updateCountTime() {
     }
 }
 //time - duration
-window.onload = function(){
-    let _minute =Math.floor(player.duration / 60);
-        let _second =Math.floor(player.duration - _minute * 60);
-        duration.innerText = `0${_minute}:${_second}`;
+window.onload = function () {
+    let _minute = Math.floor(player.duration / 60);
+    let _second = Math.floor(player.duration - _minute * 60);
+    duration.innerText = `0${_minute}:${_second}`;
 }
 //play - pause
-playPause.addEventListener('click',playOrPause);
-function playOrPause(){
+playPause.addEventListener('click', playOrPause);
+function playOrPause() {
     let interval = Loop();//call Loop
-    if(player.paused){
-       intervalId = interval; 
+    if (player.paused) {
+        intervalId = interval;
     }
-    if(player.duration > 0 && player.paused){
+    if (player.duration > 0 && player.paused) {
         player.play();
-        playPause.classList.remove("far","fa-play-circle");
-        playPause.classList.add("far","fa-pause-circle");
-        
-    }else{
+        playPause.classList.remove("far", "fa-play-circle");
+        playPause.classList.add("far", "fa-pause-circle");
+
+    } else {
         player.pause();
-        playPause.classList.remove("far","fa-pause-circle"); 
-        playPause.classList.add("far","fa-play-circle");
+        playPause.classList.remove("far", "fa-pause-circle");
+        playPause.classList.add("far", "fa-play-circle");
         //clear all interval 
         clearInterval(interval);
         clearInterval(intervalId);
@@ -54,21 +54,21 @@ function playOrPause(){
 
 }
 //Volume Up, Down
-function Volume(){
-    if(player.volume == 0){
+function Volume() {
+    if (player.volume == 0) {
         console.log("0.5");
         player.volume = 0.5;
         progressVolume.style.width = "50%";
         volume.classList.remove("fas", "fa-volume-mute")
         volume.classList.add("fas", "fa-volume-down");
-    }else{
-        if(player.volume == 0.5){
+    } else {
+        if (player.volume == 0.5) {
             console.log("1");
             player.volume = 1;
             progressVolume.style.width = "100%";
             volume.classList.remove("fas", "fa-volume-down");
             volume.classList.add("fas", "fa-volume-up");
-        }else{
+        } else {
             console.log("mute");
             player.volume = 0;
             progressVolume.style.width = "0%";
@@ -77,18 +77,18 @@ function Volume(){
         }
     }
 }
-volume.addEventListener('click',Volume);
+volume.addEventListener('click', Volume);
 
 //Loop update
-function Loop(){
+function Loop() {
     const _clearInterval = setInterval(() => {
         updateCountTime();
         updateProgressBar();
         console.log('hello');
-        if(player.currentTime == player.duration){
+        if (player.currentTime == player.duration) {
             clearInterval(_clearInterval);
-            playPause.classList.remove("far","fa-pause-circle"); 
-            playPause.classList.add("far","fa-play-circle");
+            playPause.classList.remove("far", "fa-pause-circle");
+            playPause.classList.add("far", "fa-play-circle");
         }
     }, 1000);
     return _clearInterval;
