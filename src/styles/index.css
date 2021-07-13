@@ -28,10 +28,11 @@ body{
     justify-content: center;
 }
 .row .middle{
-    flex-grow: 1;
+    /* flex-grow: 1; */
     flex: 68%;
     background-color: #170f23;
     padding: 14px 24px;
+    overflow: auto;
 }
 .row .right{
     flex: 18%;
@@ -42,11 +43,18 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
+    opacity:0;
+    background: transparent;
 }
-   
-  /* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar:hover{
+    opacity: 1;
+}
+.row .middle:hover::-webkit-scrollbar-thumb{
+    background: #6d6775; 
+    border-radius: 5px;
+}
+.row .right:hover::-webkit-scrollbar-thumb{
     background: #6d6775; 
     border-radius: 5px;
 }

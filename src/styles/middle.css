@@ -78,6 +78,7 @@
     border-bottom-left-radius: 19px;
     border-bottom-right-radius: 19px;
     display: none;
+    z-index: 100;
 }
 .middle .suggest li{
     padding: 10px 0 10px 30px;
@@ -110,7 +111,7 @@
     cursor:pointer;
 }
 /* search box end=================================*/
-/* slideshow */ 
+/* slideshow ============================*/ 
 .middle .slideshow{
     padding-top: 34px;
     width: 100%;
@@ -135,6 +136,7 @@
     color:#ccc;
     background-color: hsla(0,0%,100%,.15);
     cursor:pointer;
+    display: none;
 }
 .middle #right-btn{
     position: absolute;
@@ -150,5 +152,107 @@
     color:#ccc;
     background-color: hsla(0,0%,100%,.15);
     cursor:pointer;
+    display: none;
 
 }
+.middle .slideshow:hover > #left-btn{
+    display: block;
+}
+.middle .slideshow:hover > #right-btn{
+    display: block;
+}
+.middle .slideshow img{
+    border-radius: 10px;
+    cursor:pointer;
+    display: none;
+}
+/* slideshow end ============================*/ 
+
+/* Top playlist =============================*/
+.middle .top-playlist{
+    padding-left: 16px;
+    padding-top: 34px;
+    color: #FFF;
+    overflow: hidden;
+    width: 100%;
+}
+.middle .top-playlist .title i{
+    color:#444;
+}
+.middle .top-playlist .title::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.middle  .top-playlist .title  i{
+    float: right;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    cursor:pointer;
+    margin: 0;
+}
+.middle .top-playlist .title h2{
+    float: left;
+    font-size: 22px;
+}
+.middle .top-playlist .container{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.middle .top-playlist .box-content{
+    display: flex;
+    flex-direction: column;
+    padding:20px 20px;
+    width: 20%;
+    /* flex-basis: 10%; */
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.middle .top-playlist .box-content .wrap{
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+    border-radius: 5px;
+}
+.middle .top-playlist .box-content .album-cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    object-fit: cover;
+}
+
+.middle .top-playlist .box-content .album-cover:hover{
+    transform: scale(1.2,1.2);
+}
+.middle .box-content .overlay{
+    position: absolute;
+    top:0;
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .4s;
+}
+.middle .top-playlist .big{
+    font-size: 45px;
+    padding: 0 20px;
+}
+.middle .box-content .album-cover:hover .overlay {
+    opacity: 1;
+    
+}
+.middle .top-playlist .text{
+    padding-top:10px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+/* Top playlist end =============================*/
+
